@@ -260,7 +260,7 @@ function Home() {
 		<SafeAreaView
 			className={`${
 				isDarkColorScheme ? "bg-gray-900 text-white" : "bg-gray-50"
-			} h-screen flex flex-col items-center justify-start px-4 py-6`}>
+			} h-screen flex flex-col items-center justify-start`}>
 			<ScrollView>
 				<Card
 					className={`${
@@ -540,7 +540,7 @@ function Home() {
 				<View className="mt-8 items-center">
 					<TouchableOpacity
 						className={`items-center justify-center rounded-full h-32 w-32 ${
-							isDownloading ? "bg-gray-400" : "bg-green-600 shadow-lg"
+							isDownloading ? "bg-gray-400" : "bg-gray-800 shadow-lg"
 						}`}
 						onPress={download}
 						disabled={isDownloading}>
